@@ -4,7 +4,7 @@ const text = "We Love Programming!";
 let index = 1; //the index starts at 1
 let speed = 1000;//300 or whichever no you prefer
 
-writeText();
+
 
 function writeText() {
   textEl.innerText = text.slice(0, index);
@@ -14,5 +14,6 @@ function writeText() {
   }
   setTimeout(writeText, speed)
 }
+writeText();
 
 speedEl.addEventListener('input', (e) => speed = 1000 / e.target.value);
