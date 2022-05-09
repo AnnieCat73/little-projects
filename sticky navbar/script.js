@@ -1,4 +1,4 @@
-//Js to activate/deactivate the active navbar i.e the white one
+/*Js to activate/deactivate the active navbar i.e the white one
 
 const nav = document.querySelector(".nav");
 
@@ -20,3 +20,15 @@ function fixNav() {
  * scrollY is bigger that offsetHeight + 150 active class gets added.
  * If not it stays the normal.
  */
+
+const nav = document.querySelector(".nav");
+
+function fixNav() {
+  if (window.scrollY > nav.offsetHeight + 150) {
+    nav.classList.add("active");
+  } else {
+    nav.classList.remove("active")
+  }
+}
+
+window.addEventListener("scroll", fixNav);
