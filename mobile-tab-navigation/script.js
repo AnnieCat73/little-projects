@@ -17,3 +17,4 @@ function hideAllContents() {
 function hideAllItems() {
   listItems.forEach(item => item.classList.remove('active'));
 }
+
